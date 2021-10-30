@@ -1,0 +1,203 @@
+@font-face {
+    font-family: "Comforta";
+    src: url(../fonts/Comfortaa-Regular.woff2)format("woff2"),url(../fonts/Comfortaa-Regular.woff)format("woff"),
+    local("Comforta");
+}
+    @font-face { 
+    font-family: "Helvetica NeueCyr";
+    src: url(../fonts/HelveticaNeueCyr-Light.woff2)format("woff2"),url(../fonts/HelveticaNeueCyr-Light.woff)format("woff"),
+    local("Helvetica NeueCyr"),local("Helvetica-NeueCyr");
+}
+    @font-face {
+    font-family: "Helvetica Neue-roman";
+    src: url(../fonts/HelveticaNeueCyr-Roman.woff2)format("woff2"),url(../fonts/HelveticaNeueCyr-Roman.woff)format("woff"),
+    local("Helvetica Neue-roman"),local("Helvetica-Neue-roman");
+}
+    @font-face {
+    font-family: "Helvetica Neue-medium";
+    src: url(../fonts/HelveticaNeueCyr-Medium.woff2) format("woff2"),
+    url(../fonts/HelveticaNeueCyr-Medium.woff)format("woff"),
+    local("Helvetica Neue-medium"),local("Helvetica-Neue-medium");
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+a, p, li {
+    font-family: "Helvetica", sans-serif;
+    font-size: 20px;
+}
+
+h1, h2, h3, h4 ,h5 {
+    font-family: "Comforta", sans-serif;
+    font-size: 50px;
+}
+
+main {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.about__title {
+    text-align: center;
+}
+
+.help p {
+    position: relative;
+    left: 80px;
+}
+
+.help__title{
+    padding-top: 196px;
+}
+
+.help li {
+    list-style: none;
+    font-size: 30px;
+    padding-bottom: 122px;
+}
+
+ol{
+    counter-reset: myCounter;
+}
+
+.about {
+    width: 480px;
+}
+
+.help li:before {
+    counter-increment: myCounter;
+    content:counter(myCounter);
+    color: #ff8a00;
+    font-size: 50px;
+    padding-right: 50px;
+}
+
+.help__title {
+    text-align: center;
+    font-size: 50px;
+    color: #ff8a00;
+    padding-bottom: 114px;
+}
+
+.help__finance {
+    width: 380px;
+}
+
+.help__volonter {
+    width: 580px;
+}
+
+.help__opekun {
+    width: 470px;
+}
+
+.form {
+    background-color: #F2F0F1;
+    border-radius: 20px;
+    width: 780px;
+    height: 562px;
+    text-align: center;
+    position: relative;
+    margin:0 auto;
+    padding: 50px 100px;
+    margin-bottom: 167px;
+}
+
+.form_block {
+    height: 462px;
+    padding: 50px 100px;
+    width: 780px;
+    margin: 0 auto;
+}
+
+.form__title {
+    color: #FF8A00;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.form__text-orange{
+    color: #FF8A00;
+    font-weight: 550;
+}
+
+.form__communicate {
+    list-style: none;
+    margin-bottom: 60px;
+}
+
+.form__item{
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.form__item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.form a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-style: normal;
+    font-weight: 550;
+    height: 20px;
+}
+
+.form__mail {
+    background: url(../img/email.svg) no-repeat;
+}
+
+.form__phone {
+    background: url(../img/call.svg) no-repeat;
+}
+
+.form__input {
+    display: block;
+    width: 280px;
+    height: 40px;
+}
+
+.form__name {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: left;
+    margin-right: 16px;
+}
+
+.form__name:last-child {
+    margin-right: 0;
+}
+
+.form__button {
+    display: block;
+    background: url(../img/Paw.png) top no-repeat;
+    border: 0;
+    font-weight: 550;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FF8A00;
+    padding-top: 71px;
+    margin-left: auto;
+    margin-top: 34px;
+}
+
+
+
+
+
+
+
+
+
