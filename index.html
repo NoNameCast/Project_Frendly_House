@@ -12,48 +12,107 @@
     <link rel="preload" href="fonts/HelveticaNeueCyr-Medium.woff" as="font" type="font/woff" crossorigin>
     <title>Document</title>
 </head>
-<body>
-    <header>
+<body class="body">
+    <header class="header">
+            <nav class="header__menu">
+                <div class="header__menu-list">
+                <img src="/img/menu.svg" alt="меню" class="header__menu-img">
+                <img src="img/logo_top.svg" alt="телефон" class="header__logo">
+                <p class="header__title-tel">8 (849) 300 - 39 -57</p>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="pets__container">
+                    <div class="pets__left">
+                        <h2 class="pets__text"><span class="pets__text pets__text-orange">Сара ждёт,</span> 
+                            когда найдётся 
+                            её человек</h2>
+                        <img src="img/button_top.png" alt="кнопка помощи животным" class="pets__button_top">
+                    </div>
+                    <div class="pets__middle">
+                        <div class="pets__middle-sara"></div>
+                    </div>
+                    <div class="pets__right">
+                        <ul class="pets__list">
+                            <li class="pets__item pets__item-boris">Борис</li>
+                            <li class="pets__item pets__item-lui">Луи</li>
+                            <li class="pets__item pets__item-piter">Питер</li>
+                            <li class="pets__item pets__item-kenny">Кенни</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
     </header>
-    <main>
+
+    <main class="main">
         <section class="about">
-            <h2 class="about__title">О приюте</h2>
-            <p>Приют "Friendly House" - это целый комплекс 
-                для бездомных и брошенных животных. 
-            </p>
-            <p>
-                В приюте работает сплочённая команда, которая занимается помощью бездомным животным 
-                в течении многих лет. Мы заботимся о качестве жизни наших подопечных и осуществляем профессиональный медицинский уход.
-            </p>
-            </section>
+            <div class="about__block-text">
+                <h2 class="about__title">О приюте</h2>
+                <p class="about__text">Приют "Friendly House" - это целый комплекс 
+                    для бездомных и брошенных животных. 
+                </p>
+                <p class="about__text">
+                    В приюте работает сплочённая команда, которая занимается помощью бездомным животным 
+                    в течении многих лет. Мы заботимся о качестве жизни наших подопечных и осуществляем профессиональный медицинский уход.
+                </p>
+            </div>
+            <div class="about__block-img">
+                <img src="img/about_dog_sit.png" alt="Собака сидит и смотрит вдаль">
+                <p class="about__text about__text-link"><a href="!#" class="about__text about__link"> СМИ о нас</a></p>
+            </div>
+        </section>
 
         <section class="help">
             <h2 class= "help__title">Как ты можешь нам помочь?</h2>
             <ol class="help__question">
-                <li class="help__finance">Финансово
-                    <p>Мы будем рады любым пожертвованиям. 
+
+                <li class="help__finance">
+                    <div class="help__finance-block-text">
+                        <h2 class="help__finance-title">Финансово</h2>
+                        <p class="help__finance-text">Мы будем рады любым пожертвованиям. 
                             Деньги пойдут на корм, лечение и уход, 
                             а также, на обустройство территории, где обитают наши маленькие питомцы.
                     </p>
+                    </div>
+                    <div class="help__finance-img">
+                        <img src="img/finance_dogs.png" alt="2 собаки и кролик">
+                    </div>
                 </li>
                     
-                <li class="help__volonter">Стать волонтером
-                    <p>Наш приют "Friendly House" привлекает волонтеров для оказания помощи в самых разных форматах! От финансовой помощи и набирающего популярность интеллектуального волонтерства до помощи руками.
-                    </p>
-                    <p>Нам всегда нужна помощь с выгулом подопечных, уборкой помещений, привезти в приют корм или медикаменты, помочь с перевозкой животных в клиники, забрать и привезти вещи 
-                        и много всего другого. Мы всегда рады любой помощи, присоединяйтесь к нашей дружной команде! :)
-                    </p>
+                <li class="help__volonter">
+                    <span class="help__volonter-title"> Стать волонтером</span>
+                    <div class="help__volonter-block">
+                        <div class="help__volonter-img">
+                            <img src="img/volonter_dog.png" alt="собака и женщина">
+                        </div>
+
+                        <div class="help__volonter-block-text">
+                            <p class="help__volonter-text">Наш приют "Friendly House" привлекает волонтеров для оказания помощи в самых разных форматах! От финансовой помощи и набирающего популярность интеллектуального волонтерства до помощи руками.
+                            </p>
+                            <p class="help__volonter-text">Нам всегда нужна помощь с выгулом подопечных, уборкой помещений, привезти в приют корм или медикаменты, помочь с перевозкой животных в клиники, забрать и привезти вещи и много всего другого. Мы всегда рады любой помощи, присоединяйтесь к нашей дружной команде! :)
+                            </p>
+                    </div>
+                    </div>
                 </li>
                     
-                <li class="help__opekun">Стать опекуном
-                    <p class="help__friend">Хотите друга, но не можете взять домой? 
-                            Проект опеки - идеальное решение!
+                <li class="help__opekun">
+                    <div class="help__opekun-block-text">
+                        <h2 class="help__opekun-title">Стать опекуном</h2>
+                        <p class="help__opekun-text help__opekun-text-bold">Хотите друга, но не можете взять домой? 
+                                Проект опеки - идеальное решение!
                         </p>
-                        <p>
+                        <p class="help__opekun-text">
                             Взять под опеку животное, у которого еще нет опекуна, – это как завести питомца, о котором всю жизнь мечтал, но не мог себе этого позволить по каким-либо причинам.
                         </p>
-                    </li>
+                        </div>
+                    <div class="help__opekun-img">
+                        <img src="img/opekun_3_pictures.png" alt="картинка с животными">
+                    </div>
+                </li>
             </ol>
+            <div class="button__middle" type="submit">
+                <a href="#" class="button__link"></a>
+            </div>
         </section>
 
         <section class="form">
