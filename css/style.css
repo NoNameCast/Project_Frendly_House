@@ -73,7 +73,7 @@ section{
 
 .header__title-tel {
     content: "";
-    background: url(/img/phone_top.svg) no-repeat;
+    background: url(../img/phone_top.svg) no-repeat;
     width: 220px;
     height: 18px;
     padding-left: 35px;
