@@ -15,11 +15,20 @@
 <body class="body">
     <header class="header">
             <nav class="header__menu">
-                <div class="header__menu-list">
-                <img src="img/menu.svg" alt="меню" class="header__menu-img">
+                    <div class="header__menu-burger">
+                        <div class="header__menu-burger-button">
+                            <span></span>
+                        </div>
+                        <ul class="header__menu-burger-list">
+                            <li><a href="" class="burger__item">О приюте</a></li>
+                            <li><a href="" class="burger__item">Наши проекты</a></li>
+                            <li><a href="" class="burger__item">Как ты можешь помочь нам?</a></li>
+                            <li><a href="" class="burger__item">Наши питомцы</a></li>
+                            <li><a href="" class="burger__item">Контакты</a></li>
+                        </ul>
+                    </div>
                 <img src="img/logo_top.svg" alt="телефон" class="header__logo">
                 <p class="header__title-tel">8 (849) 300 - 39 -57</p>
-                </div>
             </nav>
             <div class="container">
                 <div class="pets__container">
@@ -27,7 +36,7 @@
                         <h2 class="pets__text"><span class="pets__text pets__text-orange">Сара ждёт,</span> 
                             когда найдётся 
                             её человек</h2>
-                        <img src="img/button_top.png" alt="кнопка помощи животным" class="pets__button_top">
+                            <button type="submit" value="" class="pets__button">Жми на лапку, чтобы помочь!</button>
                     </div>
                     <div class="pets__middle">
                         <div class="pets__middle-sara"></div>
@@ -148,6 +157,37 @@
                         <button type="submit" value="" class="form__button">отправить</button>
                     
                 </form>
+            </div>
+        </section>
+
+                <section class="modal">
+                    <div class="modal__block">
+                        <h2 class="modal__title">Ты можешь помочь нам!</h2>
+                        <p class="modal__text">Хочешь забрать питомца, стать волонтером, или опекуном?</p>
+                        <p class="modal__text modal__text-orange"> Свяжись с нами!</p>
+                        <ul class="modal__communicate">
+                            <li class="modal__phone modal__item">
+                                <a href="tel:8 (849) 300 - 39 -57">8 (849) 300 - 39 -57
+                                </a>
+                            </li>
+                            <li class="modal__mail modal__item">
+                                <a href="mailto:FriendlyHouse@gmail.com">FriendlyHouse@gmail.com
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="modal__text">Или оставь свои контакты и мы сами свяжемся с тобой!</p>
+                        <form action="/#" class="modal__form">
+                            <div class="modal__input-block">
+                                <label class="modal__name" for="modal__tel">Номер телефона
+                                <input type="tel" class="modal__input form__tel">
+                                 </label>
+                                <label class="modal__name" for="modal__email">E-mail
+                                <input type="email" class="modal__input form__email">
+                                </label>
+                            </div>
+                                <button type="submit" value="" class="modal__button">отправить</button>
+                            
+                        </form>
 
 
             
@@ -159,6 +199,8 @@
     <footer>
 
     </footer>
-    
+
+<script src="js/jquery-3.6.0.min.js" defer></script>
+<script src="js/script.js" defer></script>   
 </body>
 </html>
