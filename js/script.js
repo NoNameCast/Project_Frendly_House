@@ -7,17 +7,27 @@ $(document).ready(function() {
 
 
 const modalPetsBtn = $('.pets__button');
-const modalTitle = $('.modal__title');
+const modalClose = $('.modal__close-btn');
+const modalMiddleBtn = $('.button__middle');
 
 modalPetsBtn.click(function() {
     $('.modal').show(250);
 });
 
-$(document).click(function (e) {
-    if ($(e.target).is('.modal')) {
-        closeModal();
-    }
+modalClose.click(function() {
+    $('.modal').hide(250);
 });
+
+modalMiddleBtn.click(function() {
+    $('.modal').show(250);
+    $('html, body').animate({scrollTop: 0}, 600);
+		// return false;
+});
+
+modalClose.click(function() {
+    $('.modal').hide(250);
+});
+
 
 $('.modal').submit(function(event) {
     event.preventDefault();
@@ -26,9 +36,20 @@ $('.modal').submit(function(event) {
         type: 'POST',
         data: $('.modal').serialize(),
         success: function(data) {
-            modalTitle.text('Спасибо, за Ваше обращение' + data.id)
             $('.modal').slideUp(300);
         }
     })
 });
 
+
+$('.form').submit(function(event) {
+    event.preventDefault();
+    $.ajax({
+        url: 'https://jsonplaceholder.typicode.com/todos',
+        type: 'POST',
+        data: $('.form').serialize(),
+        success: function(data) {
+            $('.form').slideUp(300);
+        }
+    })
+});
