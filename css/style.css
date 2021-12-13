@@ -127,21 +127,6 @@ section{
     top: 33px;
 }
 
-/* .header__menu-burger-button.open-menu span {
-    opacity:0; 
-    transition: 0.3s; 
-}
-.header__menu-burger-button.open-menu:before {
-    transform: rotate(38deg);
-    top: 16px;
-    transition: 0.3s;
-}
-.header__menu-burger-button.open-menu:after {
-    transform: rotate(-38deg);
-    bottom: 16px;
-    transition: 0.3s;
-} */
-
 
 .pets__container {
     display: flex;
@@ -170,14 +155,14 @@ section{
     display: block;
     bottom: 10px;
     left: 120px;
-    background: url(../img/Paw.png) top no-repeat;
+    background: url(../img/paw.svg) top no-repeat;
     border: 0;
     font-weight: 550;
     font-size: 12px;
     line-height: 16px;
     text-transform: uppercase;
     color: #FF8A00;
-    padding-top: 30px;
+    padding-top: 80px;
     margin-left: auto;
     width: 180px;
     height: 155px;
@@ -188,64 +173,50 @@ section{
 }
 
 .pets__middle-sara {
-    content: "";
-    background: url(../img/sara_dog.png);
     width: 580px;
     height: 580px;
-
 }
 
-.pets__list {
-    padding-top: 100px;
-    width: 180px;
-    list-style: none;
+.pets__right {
+    padding-top: 137px;
+    display: flex;
+    flex-direction: column;
 }
 
-.pets__item:not(:last-child) {
-    margin-bottom: 30px;
+.pets__button-list {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
 }
 
-.pets__item {
+.pets__item-button:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.pets__right-text {
     font-weight: 300;
     font-size: 20px;
     line-height: 26px;
     align-self: center;
+    margin: 0;
+    padding-left: 10px;
 }
 
-.pets__item-boris {
-    content: "";
-    background:url(../img/Boris_cat.png)no-repeat;
-    width: 80px;
-    height: 80px;
-    padding-left: 100px;
-    padding-top: 30px;
+.pets__button-boris {
+    
 }
 
-.pets__item-lui {
-    content: "";
-    background:url(../img/lui_dog.png)no-repeat;
-    width: 80px;
-    height: 80px;
-    padding-left: 100px;
-    padding-top: 30px;
+.pets__button-lui {
+    
 }
 
-.pets__item-piter{
-    content: "";
-    background:url(../img/piter_rabbit.png)no-repeat;
-    width: 80px;
-    height: 80px;
-    padding-left: 100px;
-    padding-top: 30px;
+.pets__button-piter{
+    
 }
 
-.pets__item-kenny {
-    content: "";
-    background:url(../img/kenny_cat.png)no-repeat;
-    width: 80px;
-    height: 80px;
-    padding-left: 100px;
-    padding-top: 30px;
+.pets__button-kenny {
+    
 }
 
 .about__title {
@@ -420,15 +391,6 @@ ol{
     text-align: center;
 }
 
-.button__middle:hover {
-    box-shadow: 0 0 11px rgba(33,33,33,.2);
-    transition-duration: 300ms;
-}
-
-.button__middle:focus {
-    box-shadow: 0 0 11px rgba(33,33,33,.2);
-    transition-duration: 300ms;
-}
 
 .form {
     background-color: #F2F0F1;

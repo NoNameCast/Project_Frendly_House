@@ -21,7 +21,7 @@ modalClose.click(function() {
 modalMiddleBtn.click(function() {
     $('.modal').show(250);
     $('html, body').animate({scrollTop: 0}, 600);
-		// return false;
+		return false;
 });
 
 modalClose.click(function() {
@@ -53,3 +53,23 @@ $('.form').submit(function(event) {
         }
     })
 });
+
+
+
+
+let pets = document.querySelectorAll('.pets__button-list');
+let bigImg = document.getElementById('bigImg');
+let petsName = document.querySelector('.pets__name');
+
+pets.forEach (item => {
+    item.addEventListener ('click', event => {
+        
+        if (event.target.closest('.pets__button-list')){
+            const petsText = item.querySelector('.pets__right-text');
+            const animal = event.target.closest('.pets__button-list').querySelector('img');
+            [animal.src, bigImg.src] = [bigImg.src, animal.src];
+            [petsName.textContent, petsText.textContent] = 
+                [petsText.textContent, petsName.textContent];
+        };
+    })
+} ) 
